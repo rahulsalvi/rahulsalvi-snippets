@@ -1,0 +1,115 @@
+{
+    "import": {
+        "prefix": "imp",
+        "body": [
+            "import $0"
+        ],
+        "description": "import"
+    },
+    "import as": {
+        "prefix": "impas",
+        "body": [
+            "import ${1:package} as ${0:name}"
+        ],
+        "description": "import as"
+    },
+    "from-style import": {
+        "prefix": "from",
+        "body": [
+            "from ${1:package} import ${0:module}"
+        ],
+        "description": "from-style import"
+    },
+    "if statement": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition}:",
+            "    $0"
+        ],
+        "description": "if statement"
+    },
+    "else statement": {
+        "prefix": "else",
+        "body": [
+            "else:",
+            "    $0"
+        ],
+        "description": "else statement"
+    },
+    "else if statement": {
+        "prefix": "elif",
+        "body": [
+            "else if ${1:condition}:",
+            "    $0"
+        ],
+        "description": "else if statement"
+    },
+    "with statement": {
+        "prefix": "with",
+        "body": [
+            "with ${1:expression} as ${2:variable}:",
+            "    $0"
+        ],
+        "description": "with statement"
+    },
+    "try-except statement": {
+        "prefix": "try",
+        "body": [
+            "try:",
+            "    $1",
+            "except ${2:exception}:",
+            "    $0"
+        ],
+        "description": "try-except statement"
+    },
+    "for loop": {
+        "prefix": "for",
+        "body": [
+            "for ${1:variable} in ${2:iterable}:",
+            "    $0"
+        ],
+        "description": "for loop"
+    },
+    "indexed for loop": {
+        "prefix": "fori",
+        "body": [
+            "for ${1:i} in range(0, ${2:range}):",
+            "    $0"
+        ],
+        "description": "indexed for loop"
+    },
+    "while loop": {
+        "prefix": "while",
+        "body": [
+            "while ${1:condition}:",
+            "    $0"
+        ],
+        "description": "while loop"
+    },
+    "main": {
+        "prefix": "main",
+        "body": [
+            "if __name__ == \"__main__\":",
+            "    $0"
+        ],
+        "description": "main"
+    },
+    "function": {
+        "prefix": "func",
+        "body": [
+            "def ${1:name}(${2:parameters}):",
+            "    $0"
+        ],
+        "description": "function"
+    },
+    "class": {
+        "prefix": "class",
+        "body": [
+            "class ${1:name}:",
+            "    ${2:members}",
+            "    def __init__(self):",
+            "        $0"
+        ],
+        "description": "class"
+    }
+}
